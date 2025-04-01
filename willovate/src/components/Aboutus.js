@@ -46,7 +46,7 @@ const AboutUs = () => {
               Our mission is to bridge the gap between technology and creativity, making life simpler and smarter.
             </Typography>
             <Typography variant="body1" color="textSecondary" mt={1}>
-              With a passionate team and cutting-edge technology, we aim to deliver exceptional user experiences. Join us on our journey to create something truly remarkable!
+              With a passionate team & cutting-edge technology, we aim to deliver exceptional user experiences. Join us on our journey to create something truly remarkable!
             </Typography>
           </Box>
         </Box>

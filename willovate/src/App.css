@@ -1,0 +1,131 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Apply gradient to the entire page */
+body {
+  background: linear-gradient(45deg, #2DEB9C, #193485);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Section */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* Center content */
+  justify-content: center; /* Center content */
+  text-align: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Background Image */
+.hero-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+/* Transparent Black Overlay */
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
+  z-index: -1;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  max-width: 650px;
+  padding: 20px;
+  z-index: 1;
+}
+
+/* Hero Title */
+.hero-title {
+  font-weight: bold;
+  color: #E7FFFE;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Hero Description */
+.hero-description {
+  margin: 20px 0;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* Floating Image */
+.floating-image {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  width: 180px;
+  border: 4px solid white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.floating-image:hover {
+  transform: scale(1.05);
+}
+
+/* Gradient Button */
+.gradient-button {
+  background: linear-gradient(45deg, #84F4EE, #2DEB9C);
+  color: white;
+  padding: 12px 28px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.gradient-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #2DEB9C, #84F4EE);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+  }
+
+  .floating-image {
+    width: 140px;
+    right: 2%;
+    bottom: 2%;
+  }
+
+  .gradient-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
